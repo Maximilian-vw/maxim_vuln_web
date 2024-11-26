@@ -1,0 +1,230 @@
+/* Global Styles */
+img[alt="admin-picture"] {
+  border-radius: 50%;
+  width: 100px; /* adjust the width and height to your desired size */
+  height: 100px;
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+/* Sidebar Styles */
+
+.side-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.side-view nav {
+  padding: 20px;
+}
+
+.side-view nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-view nav ul li {
+  margin-bottom: 10px;
+}
+
+.side-view nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-view nav ul li a:hover {
+  color: #337ab7;
+}
+
+.side-view nav ul li svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.menu-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Main Content Styles */
+
+.main {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.overview-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .content {
+  display: flex;
+  align-items: center;
+}
+
+.card .content svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.card .number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Product Section Styles */
+
+.product-section {
+  margin-top: 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-keys {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.products-keys div {
+  width: 20%;
+  text-align: center;
+}
+
+.products-values {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.products-values div {
+  width: 20%;
+  text-align: center;
+}
+
+/* User Section Styles */
+
+.user-section {
+  margin-top: 20px;
+}
+
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.users {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.users-keys {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.users-keys div {
+  width: 20%;
+  text-align: center;
+}
+
+.users-values {
+  display: flex;
+  justify-content:

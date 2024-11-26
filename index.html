@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTekkomSiber</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+        #animatedText {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 2em;
+            font-family: Arial, sans-serif;
+            color: white;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="animatedText"><b>LARI ADA HENGKERRRRRR!!!</b></div>
+    <script>
+        const textElement = document.getElementById('animatedText');
+        const containerWidth = window.innerWidth;
+        const textWidth = textElement.offsetWidth;
+        let position = -textWidth;
+
+        function animate() {
+            position += 2;
+            if (position > containerWidth) {
+                position = -textWidth;
+            }
+            textElement.style.left = position + 'px';
+            requestAnimationFrame(animate);
+        }
+
+        window.onload = () => {
+            animate();
+        };
+    </script>
+</body>
+</html>
