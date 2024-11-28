@@ -37,7 +37,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'<img src=q onerror=prompt(id)>','prodinyaparajuara','admin'),(2,'wahyu','vivin','editor');
+INSERT INTO `users` VALUES (1,'admin','juaradmin','admin'),(2,'wahyu','vivin','editor');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
